@@ -21,7 +21,7 @@ while True:
     player_1.update()
     obstacles.create_rect()
     for i in obstacles.obstacles:
-        i.update()
+        i.update(screen)
 
     pygame.display.update()
     clock.tick(60)
