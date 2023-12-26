@@ -45,7 +45,7 @@ class Player:
 
 
     def draw(self):
-        pygame.draw.rect(self.screen, ('#18232d'), self.rect)
+        pygame.draw.rect(self.screen, ('#0a2348'), self.rect)
     
     def update(self):
         self.input()
