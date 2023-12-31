@@ -1,1 +1,2 @@
-Tetris like game. wasd-space based
+Tetris like game.\
+`wasd`+`space` based
