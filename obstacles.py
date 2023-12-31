@@ -33,13 +33,20 @@ class Obstacles:
         pygame.draw.rect(screen,("#480a23"),self.rect)
     def collision(self):
         #screen
-        if self.rect.left <= 0:
+        if self.rect.left <= 0 and not self.stopped:
             self.rect.left = 0
             self.stopped = True
         for i in obstacles:
             if self.rect.colliderect(i) and i != self:
                 i.left = self.rect.right
                 i.stopped = True
+    
+    def remove(self):
+        if self.stopped:
+            if self.rect.x <= -100:
+                print(self.rect.x)
+                return True
+                
     
     def update(self, screen):
         self.movement()
