@@ -29,7 +29,6 @@ while True:
         if move == True:
             if i.remove():
                 obstacles.obstacles.remove(i)
-                print("a")
             i.rect.x -= 100
             
 

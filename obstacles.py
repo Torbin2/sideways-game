@@ -44,7 +44,6 @@ class Obstacles:
     def remove(self):
         if self.stopped:
             if self.rect.x <= -100:
-                print(self.rect.x)
                 return True
                 
     
